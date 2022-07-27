@@ -41,13 +41,13 @@ namespace PdfSharpCore.Utils
                 return;
             }
 
-            bool isLinux = System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Linux);
+            /*bool isLinux = System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Linux);
             if (isLinux)
             {
                 SSupportedFonts = LinuxSystemFontResolver.Resolve();
                 SetupFontsFiles(SSupportedFonts);
                 return;
-            }
+            }*/
 
             bool isWindows = System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform(System.Runtime.InteropServices.OSPlatform.Windows);
             if (isWindows)
